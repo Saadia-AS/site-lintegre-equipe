@@ -29,6 +29,10 @@ img {
     background-color: #1B2A4A/* TODO : bleu nuit */; 
     color: #FFFFFF;
 }
+.site-header p {
+    color:#CCCCCC;
+    font-style: italic;
+}
 .entete { 
    display: flex;
    justify-content: space-around;
