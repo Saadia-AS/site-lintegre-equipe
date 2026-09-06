@@ -117,3 +117,33 @@ img {
         margin: 0 10px; 
      }
 }
+/* ===== 7. Page Actualités ===== */
+.titre-page { 
+    font-size: 28px; 
+    margin-bottom: 25px; 
+    text-decoration: underline, #C0392B;
+    border-bottom: 3px, #C0392B, solid;
+    padding-bottom: 10px;
+}
+.liste-articles { 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.article-item { 
+    width: 48%;
+    background-color: white;
+    border:  1px, solid, #E0E0E0;
+    padding: 15px;
+}
+.article-item img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+@media (max-width: 700px) { 
+    .article-item { 
+        flex-direction: column;
+    }
+}
