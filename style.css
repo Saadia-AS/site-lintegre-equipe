@@ -117,3 +117,76 @@ img {
         margin: 0 10px; 
      }
 }
+
+/* ===== 7. Page Contact ===== */
+.titre-page {
+    font-size: 28px;
+    margin-bottom: 25px;
+    /* TODO : trait rouge sous le titre (border-bottom 3px solid + rouge de la charte, padding-bottom 10px) */
+    border-bottom: 3px solid #C0392B;
+    padding-bottom: 10px;
+}
+
+.formulaire label {
+    /* TODO : chaque label sur sa propre ligne (display), 18px d'espace au-dessus, texte en gras (font-weight) */
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+.formulaire input,
+.formulaire select,
+.formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    font-family: Arial, sans-serif;
+}
+
+.case label {
+    display: inline;
+    /* le label de la case reste sur la même ligne */
+    font-weight: normal;
+}
+
+.case input {
+    width: auto;
+    /* sinon la case ferait 100% de large */
+}
+
+.bouton {
+    /* TODO : fond rouge de la charte, texte blanc, aucune bordure (border: none), padding 12px 22px, 20px d'espace au-dessus, font-size 16px, et cursor: pointer */
+    background-color: #C0392B;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 22px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* TODO : au survol du bouton (.bouton:hover), un rouge plus sombre : #96281B */
+.bouton:hover {
+    background-color: #96281B;
+}
+
+.tarifs {
+    width: 100%;
+    border-collapse: collapse;
+    /* fusionne les bordures des cellules */
+    margin-top: 20px;
+}
+
+.tarifs th,
+.tarifs td {
+    /* TODO : bordure 1px solid #CCCCCC, padding 12px, texte aligné à gauche */
+    border: 1px solid #CCCCCC;
+    padding: 12px;
+    text-align: left;
+}
+
+.tarifs th {
+    /* TODO : fond bleu nuit, texte blanc */
+    background-color: #1B2A4A;
+    color: #FFFFFF;
+}
