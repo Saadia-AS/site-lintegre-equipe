@@ -26,7 +26,7 @@ img {
 }
 /* ===== 2. En-tête ===== */
 .site-header { 
-    background-color: /* TODO : bleu nuit */; 
+    background-color: #1B2A4A/* TODO : bleu nuit */; 
     color: #FFFFFF;
 }
 .entete { 
@@ -189,4 +189,28 @@ img {
     /* TODO : fond bleu nuit, texte blanc */
     background-color: #1B2A4A;
     color: #FFFFFF;
+}
+
+/* ===== 8. Page Actualités ===== */
+.liste-articles { 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.article-item { 
+    width: 48%;
+    background-color: white;
+    border:  1px, solid, #E0E0E0;
+    padding: 15px;
+}
+.article-item img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+@media (max-width: 700px) { 
+    .article-item { 
+        flex-direction: column;
+    }
 }
